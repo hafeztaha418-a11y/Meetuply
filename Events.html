@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css" integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header fixed-top" id="navbar">
+        <nav class="basic-nav container">
+            <a href=""><img src="./img/logo-navbar.png" alt=""></a>
+            <div class="main-nav">
+              <ul class="navbar-link">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./Events.html" style="color: #00f2fe;">Events</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <a href="./resgiser.html" class="box-btn">register</a>
+        </nav>
+    </header> 
+    <main>
+        <section class="title-sec">
+           <div class="container title-content">
+              <h3>Events</h3>
+              <h5><a href="">Home / </a>Events</h5>
+           </div>
+        </section>
+        <section class="Events">
+        <div class="container">
+            <div class="row cards-Events">
+            <div class="col-lg-3 col-md-4 col-12 mb-4">
+                <div class="Filter-Events">
+                <h4 class="filter-title">Events</h4>
+                <hr>
+                <div class="filter-group" data-group="category">
+                    <h5>Category</h5>
+                    <div class="filter-options">
+                    <label class="filter-checkbox"><input type="checkbox" data-catVal="All"><span class="checkmark"></span> All Categories</label>
+                    <label class="filter-checkbox"><input type="checkbox"  data-catVal="Design"><span class="checkmark"></span> Design</label>
+                    <label class="filter-checkbox"><input type="checkbox" data-catVal="Business"><span class="checkmark"></span> Business</label>
+                    <label class="filter-checkbox"><input type="checkbox" data-catVal="Marketing"><span class="checkmark"></span> Marketing</label>
+                    </div>
+                </div>
+                <div class="filter-group" data-group="price">
+                    <h5>price</h5>
+                    <div class="filter-options">
+                    <input type="checkbox" id="price" class="inputFilltet" data-catVal="All">
+                    <label class="filter-checkbox" for="price"> All Types</label>
+                    <label class="filter-checkbox"><input type="checkbox" class="inputFilltet" data-catVal="Standard"><span class="checkmark"></span> Standard </label>
+                    <label class="filter-checkbox"><input type="checkbox" class="inputFilltet" data-catVal="Premium"><span class="checkmark"></span> Premium </label>
+                    <label class="filter-checkbox"><input type="checkbox" class="inputFilltet" data-catVal="Vip"><span class="checkmark"></span>Vip</label>
+                    </div>
+                </div>
+                <div class="filter-group" data-group="duration">
+                    <h5>Duration</h5>
+                    <div class="filter-options">
+                    <label class="filter-checkbox"><input type="checkbox" data-catVal="Under5"><span class="checkmark"></span> Under 5 hours</label>
+                    <label class="filter-checkbox"><input type="checkbox" data-catVal="5to15"><span class="checkmark"></span> 5-15 hours</label>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-8 col-12">
+                <div class="row align-items-center mb-3">
+                <div class="col-md-6 col-12 mb-3 mb-md-0">
+                    <div class="search-box">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Search courses...">
+                    </div>
+                </div>
+                </div>
+                <div class="row g-4">
+                <div class="col-lg-6 col-md-6 col-sm-12 dat-card" data-category="Business" data-cate="Vip" data-duration="5to15">
+                    <div class="card-catogories">
+                       <figure>
+                        <img src="./img/istockphoto-2166802740-1024x1024.jpg" alt="">
+                      </figure>
+                      <div class="pice-type">
+                         <span class="type-ticket">Vip</span>
+                         <span class="price-ticket">400 $</span>
+                      </div>
+                       <div class="content-catogories">
+                        <div class="ao-event-meta-section">
+                            <ul>
+                                <li>
+                                    <i class="bi bi-calendar"></i> 31 Dec, 2025
+                                </li>
+                                <li>
+                                    <i class="bi bi-clock"></i> 10.00 - 12.00
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="descripe-catogories">
+                          <h5>Innovate Business Conference 2025</h5>
+                        </div>
+                        <div class="ao-event-address">
+                          <i class="bi bi-geo-alt"></i> Stadium Street , Tanta - EGY
+                        </div>
+                        <div class="person-card">
+                           <figure>
+                               <img src="./img/photo-1562788869-4ed32648eb72.avif" alt="">
+                              </figure>
+                              <div class="des-person">
+                                <h5>John D. Alexon</h5>
+                                <p>Business Expert</p>
+                              </div>
+                        </div>
+                        <hr>
+                        <div class="btns-card-catogories">
+                           <a href="./html/details.html" class="box-btn">Buy Ticket</a>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 dat-card" data-category="Design" data-cate="Premium" data-duration="5to15">
+                    <div class="card-catogories">
+                    <figure>
+                        <img src="./img/istockphoto-2212123601-1024x1024.jpg" alt="">
+                    </figure>
+                      <div class="pice-type">
+                         <span class="type-ticket"> Premium </span>
+                         <span class="price-ticket">200 $</span>
+                      </div>
+                       <div class="content-catogories">
+                        <div class="ao-event-meta-section">
+                            <ul>
+                                <li>
+                                    <i class="bi bi-calendar"></i> 5 Jan, 2026
+                                </li>
+                                <li>
+                                    <i class="bi bi-clock"></i> 10:00 Am - 5:00 Pm
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="descripe-catogories">
+                          <h5>Innovate Design Conference 2026</h5>
+                        </div>
+                        <div class="ao-event-address">
+                          <i class="bi bi-geo-alt"></i>  Stadium Street , Tanta - EGY
+                        </div>
+                          <div class="person-card">
+                           <figure>
+                               <img src="./img/photo-1718209881006-f6e313e2e109.avif" alt="">
+                              </figure>
+                              <div class="des-person">
+                                <h5>David Toni</h5>
+                                <p>Design Expert</p>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="btns-card-catogories">
+                           <a href="./html/details.html" class="box-btn">Buy Ticket</a>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 dat-card"  data-category="Marketing" data-cate="Standard" data-duration="Under5">
+                    <div class="card-catogories">
+                          <figure><img src="./img/photo-1688828792704-4218151b5d97.avif" alt=""></figure>
+                          <div class="content-catogories">
+                            <div class="ao-event-meta-section">
+                                <ul>
+                                    <li>
+                                        <i class="bi bi-calendar"></i> 25 Aug, 2026
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-clock"></i> 10:00 Am - 14:00 Pm
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="descripe-catogories">
+                              <h5>Innovate Marketing Conference 2025</h5>
+                            </div>
+                            <div class="ao-event-address">
+                              <i class="bi bi-geo-alt"></i>  Stadium Street , Tanta - EGY
+                            </div>
+                              <div class="person-card">
+                              <figure>
+                                  <img src="./img/premium_photo-1682430145886-39c8decd85fa.avif" alt="">
+                                  </figure>
+                                      <div class="pice-type">
+                                            <span class="type-ticket"> Standard </span>
+                                            <span class="price-ticket">150 $</span>
+                                        </div>
+                                  <div class="des-person">
+                                    <h5>Moses Victor</h5>
+                                    <p>Marketing Expert</p>
+                              </div>
+                            </div>
+                            <hr>
+                            <div class="btns-card-catogories">
+                              <a href="./html/details.html" class="box-btn">Buy Ticket</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 dat-card" data-category="Business" data-cate="Standard" data-duration="5to15">
+                         <div class="card-catogories">
+                          <figure><img src="./img/photo-1556157382-97eda2d62296.avif" alt=""></figure>
+                          <div class="content-catogories">
+                            <div class="ao-event-meta-section">
+                                <ul>
+                                    <li>
+                                        <i class="bi bi-calendar"></i> 25 Aug, 2026
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-clock"></i>8:00 Am - 8:00 Pm
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="descripe-catogories">
+                              <h5>Innovate Bussiness Conference 2025</h5>
+                            </div>
+                            <div class="ao-event-address">
+                              <i class="bi bi-geo-alt"></i>  Stadium Street , Tanta - EGY
+                            </div>
+                              <div class="person-card">
+                              <figure>
+                                  <img src="./img/photo-1637589274742-8d4c152720a2.avif" alt="">
+                                  </figure>
+                                      <div class="pice-type">
+                                            <span class="type-ticket"> Standard </span>
+                                            <span class="price-ticket"> 100 $</span>
+                                        </div>
+                                  <div class="des-person">
+                                    <h5>Moses Victor</h5>
+                                    <p>Bussiness Expert</p>
+                              </div>
+                            </div>
+                            <hr>
+                            <div class="btns-card-catogories">
+                              <a href="./html/details.html" class="box-btn">Buy Ticket</a>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 dat-card" data-category="Design" data-cate="Premium" data-duration="5to15">
+                          <div class="card-catogories">
+                          <figure><img src="./img/premium_photo-1682430259342-427ec43ebc38.avif" alt=""></figure>
+                          <div class="content-catogories">
+                            <div class="ao-event-meta-section">
+                                <ul>
+                                    <li>
+                                        <i class="bi bi-calendar"></i> 25 Aug, 2026
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-clock"></i> 9:00 Am - 18:00 Pm
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="descripe-catogories">
+                              <h5>Innovate Design Conference 2025</h5>
+                            </div>
+                            <div class="ao-event-address">
+                              <i class="bi bi-geo-alt"></i>  Stadium Street , Tanta - EGY
+                            </div>
+                              <div class="person-card">
+                              <figure>
+                                  <img src="./img/photo-1622902141397-a89655353bec.avif" alt="">
+                                  </figure>
+                                      <div class="pice-type">
+                                            <span class="type-ticket"> Premium </span>
+                                            <span class="price-ticket">360 $</span>
+                                        </div>
+                                  <div class="des-person">
+                                    <h5>Moses Victor</h5>
+                                    <p>Design Expert</p>
+                              </div>
+                            </div>
+                            <hr>
+                            <div class="btns-card-catogories">
+                              <a href="./html/details.html" class="box-btn">Buy Ticket</a>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 dat-card" data-category="Marketing" data-cate="Vip" data-duration="Under5">
+                      <div class="card-catogories">
+                          <figure><img src="./img/premium_photo-1661374927471-24a90ebd5737.avif" alt=""></figure>
+                          <div class="content-catogories">
+                            <div class="ao-event-meta-section">
+                                <ul>
+                                    <li>
+                                        <i class="bi bi-calendar"></i> 25 Aug, 2026
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-clock"></i> 13:00 Pm - 15:00 Pm
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="descripe-catogories">
+                              <h5>Innovate Marketing Conference 2025</h5>
+                            </div>
+                            <div class="ao-event-address">
+                              <i class="bi bi-geo-alt"></i>  Stadium Street , Tanta - EGY
+                            </div>
+                              <div class="person-card">
+                              <figure>
+                                  <img src="./img/photo-1556557286-bf3be5fd9d06.avif" alt="">
+                                  </figure>
+                                      <div class="pice-type">
+                                            <span class="type-ticket"> Vip </span>
+                                            <span class="price-ticket">420 $</span>
+                                        </div>
+                                  <div class="des-person">
+                                    <h5>Moses Victor</h5>
+                                    <p>Marketing Expert</p>
+                              </div>
+                            </div>
+                            <hr>
+                            <div class="btns-card-catogories">
+                              <a href="./html/details.html" class="box-btn">Buy Ticket</a>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+                </div> 
+            </div>
+            </div>
+        </div>
+        </section>
+    </main>
+    <footer class="footer bg-primary text-white pt-5 pb-3">
+          <div class="container">
+              <div class="row">
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <h2 class="title-footer mb-3"><a href=""><img src="./img/logo-navbar.png" alt=""></h2>
+                  <p class="para-footer">
+                    We are dedicated to creating unforgettable conferences and events that connect innovators, leaders, and professionals from around the world.
+                  </p>
+                  <div class="d-flex mt-3 icons-footer">
+                  <a href="#" class="footer-icon"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="footer-icon"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="footer-icon"><i class="bi bi-instagram"></i></a>
+                  <a href="#" class="footer-icon"><i class="bi bi-linkedin"></i></a>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-6 mb-4">
+                  <h5 class="title-list mb-3">Useful links</h5>
+                  <ul class="list-unstyled">
+                  <li><a href="#" class="footer-link">Home</a></li>
+                  <li><a href="#" class="footer-link">About</a></li>
+                  <li><a href="#" class="footer-link">Events</a></li>
+                  <li><a href="#" class="footer-link">Contact Us</a></li>
+                  </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                  <h5 class="title-list mb-3">Our Services</h5>
+                  <ul class="list-unstyled">
+                  <li><a href="#" class="footer-link">Website design</a></li>
+                  <li><a href="#" class="footer-link">Website development</a></li>
+                  <li><a href="#" class="footer-link">Product Management</a></li>
+                  <li><a href="#" class="footer-link">graphic design</a></li>
+                  </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                  <h5 class="title-list mb-3">Contact Us</h5>
+                  <div class="adress-para">
+                  <p class="mb-1">Tanta - Governorate Street - Gharbia</p>
+                  <p class="mb-1">Gharbia, NY 535022</p>
+                  <p class="mb-1">Egypt</p>
+                  </div>
+
+                  <p class="mb-1" style="color: #fff;"><strong>Phone : </strong>01223617616</p>
+                  <p class="mb-1" style="color: #fff;"><strong>Email : </strong>hafeztaha418@gmail.com</p>
+              </div>
+              </div>
+          </div>
+          <div class="footer-bottom text-center py-3 mt-4">
+              <div class="container">
+              <span style="color: #fff;">Copyright<strong> Meet Uply </strong>All rights reserved</span>
+              <br>
+              <span style="color: #fff;">Designed by<a href="" class="text-decoration-none" style="color: #fff;"> Taha Elrefaey </a></span>
+              </div>
+          </div>
+          <a href="#" class="back-to-top position-absolute end-0 me-4 mb-2" style="bottom: 10px;"><i class="bi bi-arrow-up-short fs-3 text-white-50"></i></a>
+    </footer> 
+  <script src="./js/main.js"></script>
+
+</body>
+</html>
